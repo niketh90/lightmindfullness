@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transParent"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp">
+
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@+id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:backgroundTint="@color/transLight"
+
+        android:thumbTint="@color/colorWhite"
+        app:buffered_color="@color/colorWhite" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exo_progress"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/ivPlayvid"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@id/exo_play"
+                style="@style/ExoMediaButton.Play"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/icn_play_white" />
+
+            <ImageView
+                android:id="@id/exo_pause"
+
+                style="@style/ExoMediaButton.Pause"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+
+                android:padding="@dimen/_10sdp"
+                android:src="@mipmap/icn_pause_small_white" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/museosansrounded_700_webfont"
+            android:gravity="center"
+            android:text="03:23"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/exo_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/ivPlayvid"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/icn_rewind" />
+
+
+        <ImageView
+            android:id="@+id/exo_ffwd"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/ivPlayvid"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/icn_forward" />
+
+        <ImageView
+
+            android:id="@+id/ivFullViewdvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icn_expand" />
+    </RelativeLayout>
+
+</RelativeLayout>

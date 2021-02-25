@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.stefanodp91.android:circularseekbar:0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6c49cc2ca6322af0970bd661b39e466/circularseekbar-0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6c49cc2ca6322af0970bd661b39e466/circularseekbar-0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stefanodp91.android/circularseekbar/0.2/a6d816006f0ed87a943fe701ddadbc85682b5083/circularseekbar-0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stefanodp91.android/circularseekbar/0.2/8ae1f6c8e0315340bfefa23b6d6d4bbc30c78402/circularseekbar-0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

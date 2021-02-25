@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bggrediant"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/too"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icn_home_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museosansrounded_900_webfont"
+                android:text="@string/edit_profile"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:src="@mipmap/icn_back_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mtoolbar"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icn_pp_edit"
+                app:layout_constraintBottom_toTopOf="@+id/ivuserimg"
+                app:layout_constraintStart_toEndOf="@+id/ivuserimg"
+                app:layout_constraintTop_toTopOf="@+id/ivuserimg" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivuserimg"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@mipmap/icn_avatar_camera_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/museosansrounded_900_webfont"
+                android:text="Christian Buehner"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivuserimg" />
+
+            <TextView
+                android:id="@+id/tvchngNAme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:fontFamily="@font/museosansrounded_900_webfont"
+                android:includeFontPadding="false"
+                android:text="@string/change_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <TextView
+                android:id="@+id/tvSaveName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museosansrounded_700_webfont"
+                android:includeFontPadding="false"
+                android:text="@string/save"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvchngNAme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvchngNAme" />
+
+            <EditText
+                android:id="@+id/edUserNmae"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@null"
+                android:hint="@string/first_name"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/lighttrans"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="@+id/tvSaveName"
+                app:layout_constraintStart_toStartOf="@+id/tvchngNAme"
+                app:layout_constraintTop_toBottomOf="@+id/tvchngNAme"
+
+                />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/viewcolor"
+                app:layout_constraintEnd_toEndOf="@+id/edUserNmae"
+                app:layout_constraintStart_toStartOf="@+id/edUserNmae"
+                app:layout_constraintTop_toBottomOf="@+id/edUserNmae" />
+
+            <EditText
+                android:id="@+id/edUserlastNmae"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@null"
+                android:hint="@string/user_lastname"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/lighttrans"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="@+id/v1"
+                app:layout_constraintStart_toStartOf="@+id/v1"
+                app:layout_constraintTop_toBottomOf="@+id/v1"
+
+                />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/viewcolor"
+                app:layout_constraintEnd_toEndOf="@+id/edUserlastNmae"
+                app:layout_constraintStart_toStartOf="@+id/edUserlastNmae"
+                app:layout_constraintTop_toBottomOf="@+id/edUserlastNmae" />
+
+
+            <TextView
+                android:id="@+id/tvchngPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/museosansrounded_900_webfont"
+                android:includeFontPadding="false"
+                android:text="@string/change_pass"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+            <TextView
+                android:id="@+id/tvSavePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museosansrounded_700_webfont"
+                android:includeFontPadding="false"
+                android:text="@string/edit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvchngPass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvchngPass" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvSavePass"
+                app:layout_constraintStart_toStartOf="@+id/tvchngPass"
+                app:layout_constraintTop_toBottomOf="@+id/tvchngPass">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:id="@+id/tiEDUserPass"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintTextAppearance="@color/white"
+                    app:hintTextColor="@color/lighttrans"
+
+                    android:layout_marginRight="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <EditText
+
+                    android:id="@+id/edUserpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:background="@null"
+                    android:hint="@string/user_pass"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/lighttrans"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/v3"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:background="@color/viewcolor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tiEDUserPass" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/tiEDNewPass"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                     app:hintTextAppearance="@color/white"
+                    app:hintTextColor="@color/lighttrans"
+
+                    android:layout_marginRight="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/v3">
+
+                    <EditText
+                        android:id="@+id/ednewpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_3sdp"
+                         android:background="@null"
+
+                        android:hint="@string/new_pass"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/lighttrans"
+                        android:textSize="@dimen/_13ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/v3"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:id="@+id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@color/viewcolor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tiEDNewPass" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/tiEDConfirmPass"
+                    android:layout_height="wrap_content"
+
+                     android:layout_marginTop="@dimen/_10sdp"
+                     app:hintTextAppearance="@color/white"
+                    app:hintTextColor="@color/lighttrans"
+                    app:layout_constraintEnd_toEndOf="@+id/v4"
+                    app:layout_constraintStart_toStartOf="@+id/v4"
+                    app:layout_constraintTop_toBottomOf="@+id/v4">
+                <EditText
+                    android:id="@+id/edconfnewpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:background="@null"
+                    android:hint="@string/confirm_pass"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/lighttrans"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/v4"
+                    app:layout_constraintStart_toStartOf="@+id/v4"
+                    app:layout_constraintTop_toBottomOf="@+id/v4"
+
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/v6"
+                    android:layout_width="0dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/viewcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/tiEDConfirmPass"
+                    app:layout_constraintStart_toStartOf="@+id/tiEDConfirmPass"
+                    app:layout_constraintTop_toBottomOf="@+id/tiEDConfirmPass" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvchngEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/museosansrounded_900_webfont"
+                android:includeFontPadding="false"
+                android:text="@string/email_address"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clPass" />
+
+            <TextView
+                android:id="@+id/edUseremail"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@null"
+                android:hint="@string/user_email"
+                android:inputType="textEmailAddress"
+
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/lighttrans"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvchngEmail"
+                app:layout_constraintTop_toBottomOf="@+id/tvchngEmail"
+
+                />
+
+            <View
+                android:id="@+id/v7"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/viewcolor"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/edUseremail"
+                app:layout_constraintStart_toStartOf="@+id/edUseremail"
+                app:layout_constraintTop_toBottomOf="@+id/edUseremail" />
+
+            <LinearLayout
+                android:id="@+id/lrShareStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_65sdp"
+                android:background="@drawable/roundrect_solibck"
+                android:backgroundTint="@color/baby_pink"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:fontFamily="@font/museosansrounded_700_webfont"
+                    android:text="@string/update_prifle"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1074332195885",
+    "firebase_url": "https://lightapp-18332.firebaseio.com",
+    "project_id": "lightapp-18332",
+    "storage_bucket": "lightapp-18332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074332195885:android:e094b8166572e6da0a6ca4",
+        "android_client_info": {
+          "package_name": "com.seraphic.lightapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074332195885-tp1rqgkpt8rh4dikm3lumpa0dl7dgt8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seraphic.lightapp",
+            "certificate_hash": "f3566ba274365eb1d16d6346f5f8bf0428d6d671"
+          }
+        },
+        {
+          "client_id": "1074332195885-vuatkl4ah20s3gv3nqdukfue18fgu5h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfo7SDbJOLeU271k7xw78D3GRgUYxf3_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074332195885-vuatkl4ah20s3gv3nqdukfue18fgu5h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

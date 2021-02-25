@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: me.hiennguyen.circleseekbar:circleseekbar:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc3534da7e02fff5fc24e05d985622eb/jetified-circleseekbar-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc3534da7e02fff5fc24e05d985622eb/jetified-circleseekbar-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.hiennguyen.circleseekbar/circleseekbar/1.0.1/5d1f59d39f8801cb877a493ccc50fc61b4bc2be3/circleseekbar-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.hiennguyen.circleseekbar/circleseekbar/1.0.1/bc7027cb460dda2171594e5c505df0ffacbe7579/circleseekbar-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

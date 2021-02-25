@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/girlclor">
+
+
+    <LinearLayout
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/image_signup"
+        android:orientation="vertical"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHeight_percent="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:fontFamily="@font/museosansrounded_900_webfont"
+
+        android:id="@+id/tvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="@string/signUP_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/login_to_continue"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@id/tvsignup"
+        app:layout_constraintTop_toBottomOf="@id/tvsignup" />
+
+<androidx.core.widget.NestedScrollView
+
+
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    app:layout_constrainedHeight="true"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@id/bgImage"
+    app:layout_constraintHeight_percent="0.67"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/bgImage"
+    app:layout_constraintTop_toTopOf="@+id/bgImage"
+    app:layout_constraintVertical_bias="0.999"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/bgImage"
+        app:layout_constraintHeight_percent="0.67"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bgImage"
+        app:layout_constraintTop_toTopOf="@+id/bgImage"
+        app:layout_constraintVertical_bias="0.999">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_bg_shape" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+
+
+            <LinearLayout
+                android:id="@+id/lrContinueFacebbok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/blurFB"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_30sdp"
+                android:text="@string/continue_withemail"
+                android:textColor="@color/colorDArkBlack"
+                android:textSize="@dimen/_13ssp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/icn_facebook"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/museosansrounded_500_webfont"
+
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/continue_withfacebook"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lrContinuegoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/redGoogle"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_30sdp"
+                android:text="@string/continue_withemail"
+                android:textColor="@color/colorDArkBlack"
+                android:textSize="@dimen/_13ssp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greyLight"
+                    android:drawableStart="@mipmap/icn_google"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/museosansrounded_500_webfont"
+
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/continue_withgoogle"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lrContinueEMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/greyLight"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:paddingStart="@dimen/_30sdp"
+                android:text="@string/continue_withemail"
+                android:textColor="@color/colorDArkBlack"
+                android:textSize="@dimen/_13ssp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greyLight"
+                    android:drawableStart="@mipmap/icn_email"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/museosansrounded_500_webfont"
+
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/continue_withemail"
+                    android:textColor="@color/colorDArkBlack"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/loginL"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        android:id="@+id/tvalreadyhvacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:fontFamily="@font/museosansrounded_500_webfont"
+
+                        android:text="@string/already_have_account"
+                        android:textColor="@color/colorDArkBlack"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:fontFamily="@font/museosansrounded_500_webfont"
+
+                        android:id="@+id/tvlogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/tvalreadyhvacc"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="@string/login_with_email"
+                        android:textColor="@color/logingreen"
+                        android:gravity="right"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_alignStart="@+id/loginL"
+                    android:layout_below="@+id/loginL"
+                    android:layout_alignEnd="@+id/loginL"
+                    android:fontFamily="@font/museosansrounded_700_webfont"
+                    android:id="@+id/tvterns"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkgrey"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+
+                    android:textSize="@dimen/_12ssp" />
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bggrediant"
+    android:paddingTop="@dimen/_25sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mtoolbar"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+             android:id="@+id/ivBack"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icn_back_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/ivHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icn_home_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/museosansrounded_900_webfont"
+            android:gravity="center"
+            android:text="@string/daily_reminder"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivHome"
+            app:layout_constraintStart_toStartOf="@+id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icn_settings_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:id="@+id/tvgetreminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:fontFamily="@font/museosansrounded_900_webfont"
+        android:text="@string/get_reminders"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtoolbar" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sWitch"
+         app:thumbTint="@color/hintText"
+        app:trackTint="@color/grey"
+         android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvgetreminder" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/lighttrans"
+        app:layout_constraintTop_toBottomOf="@+id/tvgetreminder" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:id="@+id/clReminder"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintEnd_toEndOf="@id/v1"
+        app:layout_constraintTop_toBottomOf="@id/v1"
+        >
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/museosansrounded_500_webfont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/t1"
+            android:text="@string/set_a_reminder"/>
+<TextView
+    android:id="@+id/remindTINE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/t1"
+    app:layout_constraintStart_toStartOf="@id/t1"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:textSize="@dimen/_23ssp"
+    android:textColor="@color/colorWhite"
+    android:fontFamily="@font/museosansrounded_1000_webfont"
+    />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:id="@+id/lrSetReminder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_65sdp"
+        android:background="@drawable/roundrect_solibck"
+        android:backgroundTint="@color/baby_pink"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/museosansrounded_700_webfont"
+            android:text="@string/set_reminder"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:id="@+id/clTimelayout"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+        <TextView
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/museosansrounded_700_webfont"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:textColor="@color/blutxt"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tvDone"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/greyLight"
+            android:id="@+id/v2"
+            app:layout_constraintTop_toBottomOf="@+id/tvDone"
+            />
+        <TimePicker
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tpTimePicker"
+            android:numbersTextColor="@color/colorDArkBlack"
+
+            android:timePickerMode="spinner"
+             />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<resources>
+    <string name="link_string">this is my link: <a href="https://www.google.com/">CLICK</a></string>
+    <string name="create_info">By continuing you agree to our \'s <a href="https://www.massmobilemassage.com/careers/"></a>,
+    <a href="https://www.massmobilemassage.com/careers/">Cookie Policy</a>,
+    <a href="https://www.massmobilemassage.com/careers/">Privacy Policy</a> and
+    <a href="https://www.massmobilemassage.com/careers/">Content Policies</a>.
+</string>
+    <string name="onboarding1">Use the power of your mind to help your body relax, recover and heal</string>
+    <string name="onboarding2">Listen to healing meditations especially made to support cancer warriors</string>
+    <string name="onboarding3">Breathe deeply and let the world\'s best meditation teachers guide you </string>
+    <string name="ge_started">GET STARTED</string>
+    <string name="skip">Skip</string>
+    <string name="app_name">Light</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="facebook_app_id">273195194061042</string>
+    <string name="fb_login_protocol_scheme">fb273195194061042</string>
+
+    <!--    <string name="facebook_app_id">663173197852803</string>-->
+    f4a618e4d409dbc15b7915915b029606
+    <!--    <string name="fb_login_protocol_scheme">fb663173197852803</string>-->
+    <string name="ok">Ok</string>
+    <string name="internet_connection">Internet connection not available</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signUP">Sign Up</string>
+    <string name="dummy">Sed ut perspiciate unde omnis\niste natus error</string>
+    <string name="continue_withemail">Sign up with Email</string>
+    <string name="continue_withfacebook">Login/Sign up with Facebook</string>
+    <string name="continue_withgoogle">Login/Sign up with Google</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="login_u"><u>Login</u></string>
+    <string name="terms">By continueing you agree to our</string>
+    <string name="tnc"><![CDATA[T&Cs.]]></string>
+    <string name="first_name">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="createacc">Create Account</string>
+    <string name="recent_session">Recent healing sessions</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="user_statics">User Statistics</string>
+    <string name="share_stats">Share your stats</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="about">About</string>
+    <string name="logout">Log Out</string>
+    <string name="get_reminders">Get Reminders</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="termsncon"><![CDATA[Terms & Conditions]]></string>
+    <string name="great_job">Great Job!</string>
+    <string name="rate_session">Rate your session</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_name">Change Name</string>
+    <string name="save">Save</string>
+    <string name="user_name">User Name</string>
+    <string name="user_lastname">Last Name</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="change_pass">Change Password</string>
+    <string name="user_pass">Password</string>
+    <string name="change_email">Change email address</string>
+    <string name="user_email">email address</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="tncString"><![CDATA[By continuing you agree to our T & Cs. We use you data to offer you a personalised experience.Find out more.]]></string>
+    <string name="in_loving_memory">In loving memory of\nVesna</string>
+    <string name="send_email">Send Email</string>
+    <string name="empty_field">This field cannot be empty</string>
+    <string name="enter_valid_email">enter a valid email address</string>
+    <string name="alert">Alert!</string>
+    <string name="user_dosnt_exsist">User is not registered.</string>
+    <string name="verification_alert">A verification has been sent to your email, please verify to login.</string>
+    <string name="email_already_exsist">Email id is already in use.</string>
+    <string name="unauthorized">Email id or password is incorrect.</string>
+    <string name="unverifyied">Your email id is not verified.Please verify first!</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="please_enter_password">Enter your password</string>
+    <string name="password_longer">Password should be at least 7 character long.</string>
+    <string name="update_prifle">Update Profile</string>
+    <string name="set_a_reminder">Set a reminder</string>
+    <string name="done">Done</string>
+    <string name="keyword">Keyword</string>
+    <string name="no_results_found">No results found.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="default_notification_channel_id">lightap12345</string>
+    <string name="author_profile">Author Profile</string>
+    <string name="edit">Edit</string>
+    <string name="signUP_login">Login/Sign up</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="login_to_continue">Please login to continue</string>
+    <string name="create_acc_to_conti">Please create an account to continue</string>
+    <string name="no_daily_session_available">Your daily session is not available!</string>
+    <string name="forgot_string">Please enter your email address to receive a password reset link.</string>
+    <string name="email_address">Email Address</string>
+
+    <string name="membership">Membership</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="quaterly">Quaterly</string>
+    <string name="annualy">Annualy</string>
+    <string name="restore"> Restore</string>
+    <string name="restore_month"> <a href="https://play.google.com/store/account/subscriptions?sku=monthly_member&amp;package=com.seraphic.lightapp">Restore</a></string>
+    <string name="restore_quater"> <a href="https://play.google.com/store/account/subscriptions?sku=quaterly_member&amp;package=com.seraphic.lightapp">Restore</a></string>
+    <string name="restore_year"> <a href="https://play.google.com/store/account/subscriptions?sku=annually_member&amp;package=com.seraphic.lightapp">Restore</a></string>
+
+
+</resources>

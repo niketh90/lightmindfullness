@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circular="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bggrediant"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="@dimen/_25sdp"
+    android:paddingTop="@dimen/_25sdp"
+    android:paddingRight="@dimen/_25sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mtoolbar"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@mipmap/icn_back_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icn_logo_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:src="@mipmap/icn_settings_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtoolbar">
+
+
+        <!--        <androidx.core.widget.NestedScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginTop="@dimen/_10sdp"-->
+        <!--            android:fillViewport="true"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/museosansrounded_900_webfont"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:text="Healing you younger self through meditaion"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAuthorName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/museosansrounded_500_webfont"
+                android:gravity="center"
+                android:text="Tina  Barzovska"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="@+id/tvHeading"
+                app:layout_constraintStart_toStartOf="@+id/tvHeading"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeading" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAuthorName">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mediaCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_210sdp"
+                        app:cardCornerRadius="@dimen/_35sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <FrameLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.google.android.exoplayer2.ui.PlayerView
+                                        android:id="@+id/mVideoView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        app:use_controller="false" />
+
+
+                                </RelativeLayout>
+
+
+                            </FrameLayout>
+
+
+                            <ImageView
+                                android:id="@+id/ivThumbnail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/placeholder1" />
+
+                            <ProgressBar
+
+                                android:id="@+id/progress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.exoplayer2.ui.PlayerControlView
+                        android:id="@+id/vidControlls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        app:controller_layout_id="@layout/vid_controls"
+                        app:fastforward_increment="10000"
+                        app:layout_constraintTop_toBottomOf="@id/mediaCard"
+                        app:rewind_increment="10000"
+                        app:show_timeout="0"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatSeekBar
+                        android:id="@+id/seekbarVid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:progress="1"
+
+                        android:progressTint="@color/colorWhite"
+                        android:secondaryProgressTint="@color/transLight"
+                        android:thumbTint="@color/colorWhite"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mediaCard" />
+
+                    <RelativeLayout
+                        android:id="@+id/lrVideoControls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@id/seekbarVid"
+                        app:layout_constraintStart_toStartOf="@id/seekbarVid"
+                        app:layout_constraintTop_toBottomOf="@id/seekbarVid">
+
+                        <TextView
+                            android:id="@+id/tvDurationvid"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/museosansrounded_700_webfont"
+                            android:gravity="center"
+                            android:text="03:23"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <ImageView
+                            android:id="@+id/ivRewindvid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_toLeftOf="@+id/ivPlayvid"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@mipmap/icn_rewind" />
+
+                        <ImageView
+                            android:id="@+id/ivPlayvid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@mipmap/icn_play_white" />
+
+                        <ImageView
+                            android:id="@+id/ivForwardvid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/ivPlayvid"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@mipmap/icn_forward" />
+
+                        <ImageView
+                            android:id="@+id/ivFullViewdvid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icn_expand" />
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clAudioMedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constrainedHeight="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.exoplayer2.ui.PlayerView
+                            android:id="@+id/mAudioView"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@color/transParent"
+                            android:backgroundTint="@color/transParent"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shutter_background_color="@color/transParent"
+                            app:use_artwork="true"
+                            app:use_controller="false" />
+
+
+                        <!--                            <me.tankery.lib.circularseekbar.CircularSeekBar-->
+                        <!--                                android:id="@+id/prAudio"-->
+                        <!--                                android:layout_width="@dimen/_190sdp"-->
+                        <!--                                android:layout_height="@dimen/_250sdp"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_margin="@dimen/_5sdp"-->
+                        <!--                                android:padding="@dimen/_5sdp"-->
+                        <!--                                android:visibility="invisible"-->
+                        <!--                                app:cs_circle_color="@color/colorWhite"-->
+                        <!--                                app:cs_circle_progress_color="@color/colorWhite"-->
+                        <!--                                app:cs_circle_stroke_width="6dp"-->
+                        <!--                                app:cs_circle_style="round"-->
+                        <!--                                app:cs_end_angle="-300"-->
+
+                        <!--                                app:cs_maintain_equal_circle="true"-->
+                        <!--                                app:cs_negative_enabled="true"-->
+                        <!--                                app:cs_pointer_angle="2"-->
+                        <!--                                app:cs_pointer_color="@color/colorWhite"-->
+
+                        <!--                                app:cs_pointer_halo_color="@color/colorWhite"-->
+                        <!--                                app:cs_pointer_halo_width="5dp"-->
+
+                        <!--                                app:cs_pointer_stroke_width="15dp"-->
+                        <!--                                app:cs_start_angle="-360"-->
+                        <!--                                app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+                        <RelativeLayout
+                            android:id="@+id/lraudio"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_210sdp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.seraphic.lightapp.home_module.models.CircleSeekBar
+                                android:id="@+id/circular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_22sdp"
+                                android:padding="@dimen/_18sdp"
+
+                                app:csb_arcColor="@color/color_arc"
+                                app:csb_arcWidth="1dp"
+                                app:csb_max="2000000"
+                                app:csb_min="100"
+
+                                 app:csb_progressColor="@color/white"
+                                app:csb_progressWidth="6dp"
+                                app:csb_step="1"
+                                app:csb_textColor="@color/transParent"
+                                app:csb_textSize="0sp"
+                                app:csb_thumbDrawable="@drawable/round_button"
+                                app:csb_thumbSize="20dp" />
+                            <View
+                                android:layout_width="@dimen/_75sdp"
+                                android:layout_height="@dimen/_75sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/audio_circle" />
+                            <ProgressBar
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="@dimen/_48sdp"
+                                 android:layout_height="@dimen/_48sdp"
+                                android:progress="50"
+                                android:visibility="gone"
+                                android:progressTint="@color/lightcolorPrimary"
+                                android:layout_centerInParent="true"
+                                />
+                            <ProgressBar
+                                 android:id="@+id/audio_progrees"
+                                  android:layout_width="@dimen/_48sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_centerInParent="true"
+                                android:indeterminateDrawable="@drawable/mcircle"
+
+                                 />
+
+                        </RelativeLayout>
+
+                        <com.google.android.exoplayer2.ui.PlayerControlView
+                            android:id="@+id/pcAudioController"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:controller_layout_id="@layout/aud_controllers"
+                            app:fastforward_increment="10000"
+                            app:layout_constraintTop_toBottomOf="@+id/lraudio"
+                            app:rewind_increment="10000"
+                            app:show_timeout="0">
+
+                        </com.google.android.exoplayer2.ui.PlayerControlView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cs">
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:fontFamily="@font/museosansrounded_700_webfont"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:paddingBottom="7dp"
+                    android:scrollbars="vertical"
+                    android:text="This excercise focuses on the higher level of idea
+This excercise focuses on the higher   level of idea
+This excercise focuses on the higher   level of idea
+This excercise focuses on the higher level        of idea
+This excercise focuses on the higher level of idea
+This excercise focuses on the higher level of idea
+This excercise focuses on the higher level of idea
+This excercise focuses on the higher level of idea
+This excercise focuses on the higher level of idea
+This excercise focuses on the higher level of idea"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
